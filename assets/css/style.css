@@ -1,0 +1,291 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  width: 50%;
+  padding: 12px 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: inherit;
+  color: #d6cccc;
+  border: 2px solid #d6cccc;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  background-color: #332E29;
+  color: #d6cccc;
+  padding: 30px 0;
+}
+.header__img {
+  filter: invert(100%);
+  margin-right: 10%;
+}
+.header__title {
+  margin-left: 10%;
+  font-size: 2rem;
+}
+
+.presentation {
+  position: relative;
+}
+.presentation__img {
+  background-image: url("../images/presentation__img.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+}
+.presentation__title {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 65vh;
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin-left: 10vw;
+  font-family: "Montserrat", sans-serif;
+}
+.presentation__text {
+  background-color: #332E29;
+}
+.presentation__text-paragraph {
+  color: #d6cccc;
+  padding: 30px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.about {
+  background-color: #F0E3D7;
+  padding-bottom: 10%;
+}
+.about__title {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 10% 10% 2% 10%;
+}
+.about__subtitle {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.about__line {
+  color: #EF7A2E;
+  font-weight: bold;
+  font-size: 2rem;
+  transform: rotate(180deg);
+  text-align: center;
+}
+.about__text {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 30px 30px 30px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.about__img {
+  width: 80vw;
+  height: 400px;
+  margin: 0 auto 30px auto;
+  background-position: center;
+  background-size: cover;
+}
+.about__img1 {
+  background-image: url("../images/about__img1.jpg");
+}
+.about__img2 {
+  background-image: url("../images/about__img2.jpg");
+  background-position: center;
+}
+.about__img3 {
+  background-image: url("../images/about__img3.jpg");
+}
+.about__button {
+  border-color: #EF7A2E;
+  color: #332E29;
+  display: block;
+  margin: auto;
+}
+
+.info {
+  background-image: url("../images/info.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  padding: 50% 0;
+}
+.info__cards {
+  width: 80%;
+  margin: auto;
+  height: 250px;
+  background-color: #EF7A2E;
+  padding: 5% 5% 5% 5%;
+}
+.info__cards:not(:first-child) {
+  margin-top: 30px;
+}
+.info__cards-img {
+  width: 70px;
+}
+.info__cards-title {
+  color: white;
+  font-family: Times, serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+  margin: 10px 0;
+}
+.info__cards-text {
+  color: white;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.motivation {
+  background-color: #F0E3D7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.motivation__text {
+  color: #332E29;
+  filter: opacity(0.75);
+  font-size: 1.7rem;
+  font-family: cursive;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+  padding: 0 30px;
+}
+.motivation__img {
+  background-image: url("../images/motivation__img.jpg");
+  height: 250px;
+  width: 80%;
+  background-size: cover;
+  margin: auto;
+}
+
+.price {
+  background-color: #EF7A2E;
+  padding: 30px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.price__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.631);
+  margin: 0 10px;
+}
+.price__text {
+  text-align: center;
+  margin: 30px 10px;
+  color: white;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.price__button {
+  display: block;
+  margin: auto;
+  color: #EF7A2E;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  border: none;
+}
+
+.membership {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.membership__info {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+.membership__preTitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  filter: opacity(0.9);
+  letter-spacing: 0.4rem;
+  padding-bottom: 10px;
+}
+.membership__title {
+  font-size: 1.7rem;
+  filter: opacity(0.9);
+  font-weight: bold;
+}
+.membership__text {
+  font-size: 1.3rem;
+  padding: 30px 0;
+  text-align: center;
+}
+.membership__button {
+  display: block;
+  margin: auto;
+  color: black;
+  font-size: 1.3rem;
+  border-color: black;
+  filter: opacity(0.8);
+}
+.membership__img {
+  background-image: url("../images/membership__img.jpg");
+  width: 100vw;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  background-color: black;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.footer__text {
+  padding: 10px 0 10px 0;
+  font-size: 1.5rem;
+}
+.footer__icons {
+  display: flex;
+}
+.footer__icons :not(:first-child) {
+  margin-left: 20px;
+}
+.footer__icon {
+  filter: invert(100);
+  height: 30px;
+}
+.footer__contacts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer__contacts :not(:first-child) {
+  margin-top: 10px;
+}
+.footer__contacts :last-child {
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

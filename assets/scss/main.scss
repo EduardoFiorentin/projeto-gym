@@ -23,6 +23,19 @@ $font-button: 'Oswald', sans-serif;
     border: 2px solid $letter;
     margin-left: 10%;
     margin-bottom: 10%;
+
+    @media screen and (min-width: 768px) {
+        & {
+            width: 300px;
+            font-size: 1.3rem;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        & {
+            display: block;
+            margin: auto;
+        }
+    }
 }
 
 
@@ -45,6 +58,13 @@ $font-button: 'Oswald', sans-serif;
     &__title {
         margin-left: 10%;
         font-size: 2rem;
+
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 4rem;
+            }
+        }
+        
     }
     
 }
@@ -52,6 +72,7 @@ $font-button: 'Oswald', sans-serif;
 .presentation {
     // display: none;
     position: relative;
+    
     &__img {
         background-image: url('../images/presentation__img.jpg');
         background-position: center;
@@ -68,10 +89,18 @@ $font-button: 'Oswald', sans-serif;
         font-size: 2.6rem;
         margin-left: 10vw;
         font-family: $font-main;
+
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 5rem;
+            }
+        }
+        
     }
     
     &__text {
         background-color: $dark-brown;
+        padding-bottom: 30px;
 
         &-paragraph {
             color: $letter;
@@ -80,6 +109,22 @@ $font-button: 'Oswald', sans-serif;
             letter-spacing: .1rem;
             line-height: 1.5rem;
             text-align: justify;
+            
+
+            @media screen and (min-width: 768px) {
+                & {
+                    width: 700px;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                & {
+                    font-size: 2.5rem;
+                    width: 900px;
+                    line-height: 2.5rem;
+                }
+            }
         }
     }
 }
@@ -94,7 +139,19 @@ $font-button: 'Oswald', sans-serif;
         font-family: $font-main;
         text-align: center;
         font-weight: bold;
-        padding: 10% 10% 2% 10%;
+        padding: 40px 10% 20px 10%;
+
+        @media screen and (min-width: 768px) {
+            & {
+                font-size: 3rem;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 4.5rem;
+            }
+        }
+        
     }
     &__subtitle {
         font-family: $font-button;
@@ -102,6 +159,18 @@ $font-button: 'Oswald', sans-serif;
         text-align: center;
         text-transform: uppercase;
         padding-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            & {
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 2rem;
+            }
+        }
+        
     }
     &__line {
         color: $orange;
@@ -118,7 +187,33 @@ $font-button: 'Oswald', sans-serif;
         letter-spacing: .1rem;
         line-height: 1.5rem;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            & {
+                display: block;
+                width: 700px;
+                margin: auto;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 2.5rem;
+                width: 900px;
+                line-height: 2.5rem;
+            }
+        }
+        
     }
+    @media screen and (min-width: 1024px) {
+        &__imgs {
+            display: flex;
+        }  
+        .about__img {
+            width: 30vw;
+            height: 500px;
+        }
+    }
+    
 
     &__img {
         width: 80vw;
@@ -126,6 +221,12 @@ $font-button: 'Oswald', sans-serif;
         margin: 0 auto 30px auto;
         background-position: center;
         background-size: cover;
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 400px;
+            }
+        }
     }
     &__img1 {
         background-image: url('../images/about__img1.jpg');
@@ -153,17 +254,34 @@ $font-button: 'Oswald', sans-serif;
     background-position: center;
     width: 100vw;
     height: auto;
-    padding: 50% 0;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+
+
+    .info__cont-cards:not(:first-child) {
+        margin-top: 30px;
+    }
 
     &__cards {
-        width: 80%;
+        // width: 80%;
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         margin: auto;
-        height: 250px;
+        height: 300px;
         background-color: $orange;
-        padding: 5% 5% 5% 5%;
+        padding: 50px;
+
 
         &:not(:first-child) {
             margin-top: 30px;
+        }
+        @media screen and (min-width: 1024px) {
+            & {
+                margin: 30px; 
+            }   
         }
 
         &-img {
@@ -183,6 +301,19 @@ $font-button: 'Oswald', sans-serif;
             font-size: 1.3rem;
             font-style: italic;
             line-height: 1.5rem;
+
+            @media screen and (min-width: 768px) {
+                & {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__cont-cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
@@ -211,6 +342,11 @@ $font-button: 'Oswald', sans-serif;
         background-size: cover;
         margin: auto;
 
+        @media screen and (min-width: 768px) {
+            & {
+                width: 400px;
+            }
+        }
     }
 }
 
@@ -220,7 +356,7 @@ $font-button: 'Oswald', sans-serif;
     padding: 30px 0;
     font-family: $font-main;
 
-    &__title{
+    &__title {
         font-size: 2.5rem;
         font-weight: bold;
         color: white;
@@ -235,6 +371,14 @@ $font-button: 'Oswald', sans-serif;
         line-height: 1.5rem;
         font-size: 1.5rem;
         font-weight: 600;
+
+        @media screen and (min-width: 768px) {
+            & {
+                display: block;
+                width: 700px;
+                margin: 30px auto;
+            }
+        }
     }
     &__button{
         display: block;
@@ -287,6 +431,12 @@ $font-button: 'Oswald', sans-serif;
         height: 50vh;
         background-position: center;
         background-size: cover;
+        @media screen and (min-width: 768px) {
+            & {
+                height: 70vh;
+                background-position: center;
+            }
+        }
     }
 }
 .footer {

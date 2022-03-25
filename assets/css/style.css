@@ -14,6 +14,18 @@
   margin-left: 10%;
   margin-bottom: 10%;
 }
+@media screen and (min-width: 768px) {
+  .button {
+    width: 300px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    display: block;
+    margin: auto;
+  }
+}
 
 .header {
   display: flex;
@@ -31,6 +43,11 @@
 .header__title {
   margin-left: 10%;
   font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 4rem;
+  }
 }
 
 .presentation {
@@ -53,8 +70,14 @@
   margin-left: 10vw;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (min-width: 1024px) {
+  .presentation__title {
+    font-size: 5rem;
+  }
+}
 .presentation__text {
   background-color: #332E29;
+  padding-bottom: 30px;
 }
 .presentation__text-paragraph {
   color: #d6cccc;
@@ -63,6 +86,20 @@
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .presentation__text-paragraph {
+    width: 700px;
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .presentation__text-paragraph {
+    font-size: 2.5rem;
+    width: 900px;
+    line-height: 2.5rem;
+  }
 }
 
 .about {
@@ -74,7 +111,17 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: bold;
-  padding: 10% 10% 2% 10%;
+  padding: 40px 10% 20px 10%;
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__title {
+    font-size: 4.5rem;
+  }
 }
 .about__subtitle {
   font-family: "Oswald", sans-serif;
@@ -82,6 +129,16 @@
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .about__subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__subtitle {
+    font-size: 2rem;
+  }
 }
 .about__line {
   color: #EF7A2E;
@@ -99,12 +156,40 @@
   line-height: 1.5rem;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .about__text {
+    display: block;
+    width: 700px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__text {
+    font-size: 2.5rem;
+    width: 900px;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__imgs {
+    display: flex;
+  }
+  .about .about__img {
+    width: 30vw;
+    height: 500px;
+  }
+}
 .about__img {
   width: 80vw;
   height: 400px;
   margin: 0 auto 30px auto;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .about__img {
+    width: 400px;
+  }
 }
 .about__img1 {
   background-image: url("../images/about__img1.jpg");
@@ -129,17 +214,30 @@
   background-position: center;
   width: 100vw;
   height: auto;
-  padding: 50% 0;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+.info .info__cont-cards:not(:first-child) {
+  margin-top: 30px;
 }
 .info__cards {
-  width: 80%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: auto;
-  height: 250px;
+  height: 300px;
   background-color: #EF7A2E;
-  padding: 5% 5% 5% 5%;
+  padding: 50px;
 }
 .info__cards:not(:first-child) {
   margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .info__cards {
+    margin: 30px;
+  }
 }
 .info__cards-img {
   width: 70px;
@@ -158,6 +256,18 @@
   font-size: 1.3rem;
   font-style: italic;
   line-height: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .info__cards-text {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .info__cont-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .motivation {
@@ -183,6 +293,11 @@
   background-size: cover;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .motivation__img {
+    width: 400px;
+  }
+}
 
 .price {
   background-color: #EF7A2E;
@@ -204,6 +319,13 @@
   line-height: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .price__text {
+    display: block;
+    width: 700px;
+    margin: 30px auto;
+  }
 }
 .price__button {
   display: block;
@@ -255,6 +377,12 @@
   height: 50vh;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .membership__img {
+    height: 70vh;
+    background-position: center;
+  }
 }
 
 .footer {
